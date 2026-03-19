@@ -1,0 +1,13 @@
+{
+  "name": "2026-03-19-creator-spark-registry",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Micro-CRM for tracking which creators to cheer on. (Small Node.js CLI tool with sample data processing.)",
+  "bin": {
+    "2026-03-19-creator-spark-registry": "src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "license": "MIT"
+}
