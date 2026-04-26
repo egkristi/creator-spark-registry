@@ -1,6 +1,4 @@
-"""Creator Spark Registry
-Micro-CRM for tracking which creators to cheer on.
-"""
+"""Creator Spark Registry — Micro-CRM for tracking creators to cheer on."""
 from __future__ import annotations
 
 import argparse
@@ -12,42 +10,10 @@ from statistics import mean
 from typing import List, Sequence
 
 DATA_PATH = Path(__file__).with_name("creators.json")
-DEFAULT_DATA = [
-    {
-        "handle": "@fjordsketch",
-        "platform": "Instagram",
-        "category": "watercolor timelapses",
-        "note": "Uploads 60-second coastal watercolor loops.",
-        "heat": 0.87,
-        "last_seen": "2026-02-12",
-        "last_boosted": "2026-02-04",
-    },
-    {
-        "handle": "@auroraaudio",
-        "platform": "YouTube",
-        "category": "field recordings",
-        "note": "Ambient expeditions with crisp thumbnails.",
-        "heat": 0.92,
-        "last_seen": "2026-02-11",
-        "last_boosted": "2026-01-29",
-    },
-    {
-        "handle": "@northernknots",
-        "platform": "X",
-        "category": "macro weaving",
-        "note": "Threading reels pair textile close-ups w/ founder tips.",
-        "heat": 0.74,
-        "last_seen": "2026-02-08",
-        "last_boosted": "2026-02-01",
-    },
-]
 
 
 def format_row(columns: Sequence[str], widths: Sequence[int]) -> str:
-    padded = []
-    for value, width, align in zip(columns, widths, ("<", "<", ">", ">", "<")):
-        padded.append(f"{value:{align}{width}}")
-    return "  ".join(padded)
+    return "  ".join(f"{v:<{w}}" for v, w in zip(columns, widths))
 
 
 @dataclass
@@ -80,14 +46,9 @@ class Creator:
 # Data helpers
 # ---------------------------------------------------------------------------
 
-def _ensure_dataset() -> None:
-    if DATA_PATH.exists():
-        return
-    DATA_PATH.write_text(json.dumps(DEFAULT_DATA, indent=2))
-
-
 def load_creators() -> List[Creator]:
-    _ensure_dataset()
+    if not DATA_PATH.exists():
+        raise SystemExit(f"Data file not found: {DATA_PATH}")
     raw = json.loads(DATA_PATH.read_text())
     creators = []
     for entry in raw:
@@ -223,7 +184,7 @@ def cmd_agenda(args: argparse.Namespace) -> None:
 
     widths = (16, 6, 6, 60)
     header = ("Handle", "Heat", "Days", "Focus note")
-    print("Boost agenda (older than", args.window, "days)")
+    print(f"Boost agenda (older than {args.window} days)")
     print(format_row(header, widths))
     print("-" * 96)
 
@@ -235,6 +196,17 @@ def cmd_agenda(args: argparse.Namespace) -> None:
             creator.note,
         )
         print(format_row(row, widths))
+
+
+def cmd_remove(args: argparse.Namespace) -> None:
+    creators = load_creators()
+    handle = _normalize_handle(args.handle)
+    before = len(creators)
+    creators = [c for c in creators if c.handle.lower() != handle.lower()]
+    if len(creators) == before:
+        raise SystemExit(f"No creator named {handle} in the registry.")
+    save_creators(creators)
+    print(f"Removed {handle} from the registry.")
 
 
 # ---------------------------------------------------------------------------
@@ -275,6 +247,10 @@ def build_parser() -> argparse.ArgumentParser:
     agenda_parser.add_argument("--window", type=int, default=7)
     agenda_parser.add_argument("--limit", type=int, default=5)
     agenda_parser.set_defaults(func=cmd_agenda)
+
+    remove_parser = sub.add_parser("remove", help="Remove a creator")
+    remove_parser.add_argument("handle")
+    remove_parser.set_defaults(func=cmd_remove)
 
     return parser
 
