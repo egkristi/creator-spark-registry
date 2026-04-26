@@ -1,0 +1,44 @@
+Creator Spark Registry Commercial License
+
+Copyright (c) 2026 Erling Kristiansen. All rights reserved.
+
+This Commercial License Agreement ("Agreement") governs the use of Creator Spark Registry
+("Software") for commercial purposes beyond the terms of the GNU Affero General
+Public License v3.0 ("AGPLv3").
+
+--- WHO NEEDS A COMMERCIAL LICENSE ---
+
+You need a commercial license if you:
+
+1. Use Creator Spark Registry in a commercial product or service with >50 users
+   AND annual revenue exceeding USD 5,000,000, OR
+
+2. Distribute Creator Spark Registry as part of a commercial product without releasing your
+   product's source code under AGPLv3, OR
+
+3. Offer Creator Spark Registry as a hosted/managed service (SaaS) to third parties without
+   releasing all modifications under AGPLv3.
+
+--- WHO DOES NOT NEED A COMMERCIAL LICENSE ---
+
+You do NOT need a commercial license if you:
+
+- Use Creator Spark Registry for personal, educational, or research purposes
+- Use Creator Spark Registry in an open source project licensed under AGPLv3-compatible terms
+- Use Creator Spark Registry commercially within the free tier thresholds
+- Contribute to Creator Spark Registry under the AGPLv3
+
+--- HOW TO OBTAIN A COMMERCIAL LICENSE ---
+
+Contact: erling@rognsund.no (or via https://github.com/egkristi/creator-spark-registry)
+
+Commercial licenses are available per organization. Pricing available on request.
+
+--- DISCLAIMER ---
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
+THE AUTHORS SHALL NOT BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY.
+
+---
+
+Version 1.0 — April 2026
