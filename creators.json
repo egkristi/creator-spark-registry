@@ -1,12 +1,196 @@
 [
   {
+    "handle": "@torvalds",
+    "platform": "GitHub",
+    "category": "open source",
+    "note": "Linux kernel creator. Follow kernel releases and Git updates.",
+    "heat": 0.99,
+    "last_seen": "2026-04-27",
+    "last_boosted": "2026-04-15",
+    "tags": [
+      "linux",
+      "git",
+      "kernel"
+    ],
+    "url": "https://github.com/torvalds",
+    "enrichment": {
+      "github": {
+        "source": "github",
+        "name": "Linus Torvalds",
+        "bio": null,
+        "followers": 299482,
+        "following": 0,
+        "public_repos": 11,
+        "total_stars": 234254,
+        "location": "Portland, OR",
+        "company": "Linux Foundation",
+        "recent_repos": [
+          {
+            "name": "linux",
+            "stars": 230964,
+            "updated": "2026-04-26"
+          },
+          {
+            "name": "libdc-for-dirk",
+            "stars": 387,
+            "updated": "2024-12-26"
+          },
+          {
+            "name": "subsurface-for-dirk",
+            "stars": 451,
+            "updated": "2024-08-28"
+          },
+          {
+            "name": "1590A",
+            "stars": 560,
+            "updated": "2025-09-19"
+          },
+          {
+            "name": "GuitarPedal",
+            "stars": 1892,
+            "updated": "2026-01-05"
+          }
+        ],
+        "fetched": "2026-04-27T06:05:15.455Z"
+      },
+      "hackernews": {
+        "source": "hackernews",
+        "mentions": 1734,
+        "total_points": 9887,
+        "total_comments": 4306,
+        "recent_mentions": [
+          {
+            "title": "Linus Torvalds apologizes for his behavior, takes time off",
+            "points": 2585,
+            "date": "2018-09-16"
+          },
+          {
+            "title": "Linus Torvalds: “Somebody is pushing complete garbage for un",
+            "points": 1854,
+            "date": "2018-01-22"
+          },
+          {
+            "title": "Linus Torvalds: Git proved I could be more than a one-hit wo",
+            "points": 783,
+            "date": "2019-11-01"
+          },
+          {
+            "title": "Linus Torvalds on mRNA Vaccines",
+            "points": 763,
+            "date": "2021-06-10"
+          },
+          {
+            "title": "Linus Torvalds' good taste argument for linked lists, explai",
+            "points": 717,
+            "date": "2020-12-06"
+          }
+        ],
+        "fetched": "2026-04-27T06:04:23.882Z"
+      }
+    }
+  },
+  {
+    "handle": "@ben",
+    "platform": "DEV.to",
+    "category": "dev community",
+    "note": "DEV.to co-founder. Writes about open source and community building.",
+    "heat": 0.88,
+    "last_seen": "2026-04-27",
+    "last_boosted": "2026-04-10",
+    "tags": [
+      "community",
+      "writing",
+      "open-source"
+    ],
+    "url": "https://dev.to/ben",
+    "enrichment": {
+      "devto": {
+        "source": "devto",
+        "articles_count": 10,
+        "total_reactions": 186,
+        "total_comments": 117,
+        "recent_articles": [
+          {
+            "title": "This is pretty exciting!\r\n\r\nhttps://github.com/matz/spinel",
+            "reactions": 1,
+            "published": "2026-04-24"
+          },
+          {
+            "title": "Meme Monday",
+            "reactions": 29,
+            "published": "2026-04-20"
+          },
+          {
+            "title": "Some of these are sooo funny",
+            "reactions": 2,
+            "published": "2026-04-14"
+          },
+          {
+            "title": "Sometimes your AI server is down and you remember you actual",
+            "reactions": 7,
+            "published": "2026-04-13"
+          },
+          {
+            "title": "Meme Monday",
+            "reactions": 47,
+            "published": "2026-04-13"
+          }
+        ],
+        "fetched": "2026-04-27T06:05:15.780Z"
+      }
+    }
+  },
+  {
+    "handle": "@Gargron",
+    "platform": "Mastodon",
+    "category": "fediverse",
+    "note": "Mastodon creator. Building decentralized social media.",
+    "heat": 0.9,
+    "last_seen": "2026-04-27",
+    "last_boosted": "2026-04-05",
+    "tags": [
+      "fediverse",
+      "decentralized",
+      "open-source"
+    ],
+    "url": "https://mastodon.social/@Gargron",
+    "enrichment": {
+      "mastodon": {
+        "source": "mastodon",
+        "display_name": "Eugen Rochko",
+        "note": "<p>Executive Strategy &amp; Product Advisor, Founder of <span class=\"h-card\" translate=\"no\"><a href=\"https://mastodon.social/@Mastodon\" class=\"u-url mention\">@<span>Mastodon</span></a></span>. Film ph",
+        "followers": 379483,
+        "following": 709,
+        "statuses": 81260,
+        "instance": "mastodon.social",
+        "fetched": "2026-04-27T06:05:15.941Z"
+      }
+    }
+  },
+  {
     "handle": "@fjordsketch",
     "platform": "Instagram",
     "category": "watercolor timelapses",
     "note": "Uploads 60-second coastal watercolor loops.",
     "heat": 0.87,
-    "last_seen": "2026-02-12",
-    "last_boosted": "2026-02-04"
+    "last_seen": "2026-04-27",
+    "last_boosted": "2026-02-04",
+    "tags": [
+      "art",
+      "watercolor",
+      "norway"
+    ],
+    "url": "",
+    "enrichment": {
+      "hackernews": {
+        "source": "hackernews",
+        "mentions": 0,
+        "total_points": 0,
+        "total_comments": 0,
+        "recent_mentions": [],
+        "fetched": "2026-04-27T06:05:16.307Z"
+      }
+    }
   },
   {
     "handle": "@auroraaudio",
@@ -14,8 +198,24 @@
     "category": "field recordings",
     "note": "Ambient expeditions with crisp thumbnails.",
     "heat": 0.92,
-    "last_seen": "2026-02-11",
-    "last_boosted": "2026-01-29"
+    "last_seen": "2026-04-27",
+    "last_boosted": "2026-01-29",
+    "tags": [
+      "audio",
+      "ambient",
+      "nature"
+    ],
+    "url": "",
+    "enrichment": {
+      "hackernews": {
+        "source": "hackernews",
+        "mentions": 0,
+        "total_points": 0,
+        "total_comments": 0,
+        "recent_mentions": [],
+        "fetched": "2026-04-27T06:05:16.649Z"
+      }
+    }
   },
   {
     "handle": "@northernknots",
@@ -23,7 +223,23 @@
     "category": "macro weaving",
     "note": "Threading reels pair textile close-ups w/ founder tips.",
     "heat": 0.74,
-    "last_seen": "2026-02-08",
-    "last_boosted": "2026-02-01"
+    "last_seen": "2026-04-27",
+    "last_boosted": "2026-02-01",
+    "tags": [
+      "craft",
+      "textile",
+      "maker"
+    ],
+    "url": "",
+    "enrichment": {
+      "hackernews": {
+        "source": "hackernews",
+        "mentions": 0,
+        "total_points": 0,
+        "total_comments": 0,
+        "recent_mentions": [],
+        "fetched": "2026-04-27T06:05:16.948Z"
+      }
+    }
   }
 ]

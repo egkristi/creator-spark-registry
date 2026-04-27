@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "creator-spark-registry"
+version = "2.0.0"
+description = "Micro-CRM with live data enrichment for tracking creators across platforms."
+requires-python = ">=3.10"
+license = "AGPL-3.0-or-later"
+authors = [{ name = "Erling Kristiansen", email = "erling@rognsund.no" }]
+keywords = ["creators", "crm", "social-media", "tracking", "enrichment"]
+
+[project.scripts]
+creator-spark = "registry:main"

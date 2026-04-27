@@ -1,13 +1,13 @@
 {
   "name": "creator-spark-registry",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "type": "module",
-  "description": "Micro-CRM for tracking which creators to cheer on.",
+  "description": "Micro-CRM with live data enrichment for tracking creators across platforms.",
   "bin": {
     "creator-spark": "src/index.js"
   },
   "scripts": {
     "start": "node src/index.js"
   },
-  "license": "MIT"
+  "license": "AGPL-3.0-or-later"
 }
